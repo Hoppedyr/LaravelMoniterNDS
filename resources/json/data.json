@@ -1,0 +1,95 @@
+[{
+    "parent": "NDS syst s1/s2",
+    "id": "1",
+    "data": {
+        "Main Views 1": {
+            "serverUrl": "http://vm-twnocc-1/syst/",
+            "overskrift": "In and Outgoing Transactions",
+            "lines": {
+                "line1txt": {
+                    "txt": "DK Internet og CKI servere",
+                    "url": "nds-monitor-main-view-x001-graf-1.asp"
+                },
+                "line2txt": {
+                    "txt": "All Incoming Transactions and Out 1",
+                    "url": "nds-monitor-main-view-x001-graf-2.asp"
+                }
+            }
+        },
+        "Main Views 2": {
+            "serverUrl": "http://vm-twnocc-1/syst/",
+            "overskrift": "In and Outgoing Transactions",
+            "lines": {
+                "line1txt": {
+                    "txt": "DK Internet og CKI servere",
+                    "url": "nds-monitor-main-view-x001-graf-1.asp"
+                },
+                "line2txt": {
+                    "txt": "All Incoming Transactions and Out 1",
+                    "url": "nds-monitor-main-view-x001-graf-2.asp"
+                }
+            }
+        },
+        "Main Views 3": {
+            "serverUrl": "http://vm-twnocc-1/syst/",
+            "overskrift": "In and Outgoing Transactions",
+            "lines": {
+                "line1txt": {
+                    "txt": "DK Internet og CKI servere",
+                    "url": "nds-monitor-main-view-x001-graf-1.asp"
+                },
+                "line2txt": {
+                    "txt": "All Incoming Transactions and Out 1",
+                    "url": "nds-monitor-main-view-x001-graf-2.asp"
+                }
+            }
+        }
+    }
+}, {
+    "parent": "test",
+    "id": "2",
+    "data": {
+        "test1": {
+            "serverUrl": "http://vm-twnocc-1/syst/",
+            "overskrift": "In and Outgoing Transactions",
+            "lines": {
+                "line1txt": {
+                    "txt": "DK Internet og CKI servere",
+                    "url": "nds-monitor-main-view-x001-graf-1.asp"
+                },
+                "line2txt": {
+                    "txt": "All Incoming Transactions and Out 1",
+                    "url": "nds-monitor-main-view-x001-graf-2.asp"
+                }
+            }
+        },
+        "test2": {
+            "serverUrl": "http://vm-twnocc-1/syst/",
+            "overskrift": "In and Outgoing Transactions",
+            "lines": {
+                "line1txt": {
+                    "txt": "DK Internet og CKI servere",
+                    "url": "nds-monitor-main-view-x001-graf-1.asp"
+                },
+                "line2txt": {
+                    "txt": "All Incoming Transactions and Out 1",
+                    "url": "nds-monitor-main-view-x001-graf-2.asp"
+                }
+            }
+        },
+        "test3": {
+            "serverUrl": "http://vm-twnocc-1/syst/",
+            "overskrift": "In and Outgoing Transactions",
+            "lines": {
+                "line1txt": {
+                    "txt": "DK Internet og CKI servere",
+                    "url": "nds-monitor-main-view-x001-graf-1.asp"
+                },
+                "line2txt": {
+                    "txt": "All Incoming Transactions and Out 1",
+                    "url": "nds-monitor-main-view-x001-graf-2.asp"
+                }
+            }
+        }
+    }
+}]
