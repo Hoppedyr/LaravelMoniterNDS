@@ -17,7 +17,7 @@
             <div class="col">
                 <div class="card bg-light">
                     <div class="card-body">
-                        <a href="{{route('serverMainPage', ['serverMainPageid'=>$server->id])}}">{{ $server->parent }}</a>
+                        <a href="{{route('serverMainPage', ['serverMainPageId'=>$server->id])}}">{{ $server->parent }}</a>
                     </div>
                 </div>
             </div>
