@@ -13,13 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-
-
 Route::get('/', 'AppController@index')->name('home');
 
-Route::get('/{serverMainPageid}/serverMainPage', 'AppController@serverMainPage')->name('serverMainPage');
+Route::prefix('/{serverMainPageId}/serverMainPage')->group(function () {
+    Route::get(
+        '/',
+        'AppController@serverMainPage'
+    )->name('serverMainPage');
 
-Route::get('/{serverMainPageid}/serverMainPage/{serverDataPageid}/serverDataPage', 'AppController@serverDataPage')->name('serverDataPage');
+    Route::get(
+        '/{serverDataPageId}/serverDataPage',
+        'AppController@serverDataPage'
+    )->name('serverDataPage');
+});
