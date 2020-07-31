@@ -7,11 +7,11 @@
             <a class="nav-item" href="/">Home Page</a>
         </li>
         <li class="nav-item">
-            <a class="nav-item" href="{{route('serverMainPage', ['serverMainPageid' => $serverId ])}}">Server Home</a>
+            <a class="nav-item" href="{{route('serverMainPage', ['serverMainPageId' => $serverId ])}}">Server Home</a>
         </li>
-        @foreach ($pageDatas as $key => $value)
+        @foreach ($pageData as $key => $value)
         <li class="nav-item">
-            <a href="{{route('serverDataPage', ['serverDataPageid'=>$key, 'serverMainPageid'=> $serverId] )}}">{{ $key }}</a>
+            <a href="{{route('serverDataPage', ['serverDataPageId'=>$key, 'serverMainPageId'=> $serverId] )}}">{{ $key }}</a>
         </li>
         @endforeach
     </ul>
@@ -25,7 +25,7 @@
             <ol>
                 @foreach ($serverData->lines as $item)
                 <li>
-                    {{$item->txt}} -> <span class="badge"><a class="nav-link" href="{{$item->url}}">Server Home</a></span>
+                    {{$item->txt}} -> <span class="badge"><a class="nav-link" target="_blank" href="http://{{$item->url}}">Server Home</a></span>
                 </li>
                 @endforeach
             </ol>
