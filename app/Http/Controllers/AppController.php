@@ -2,48 +2,57 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class AppController extends Controller
 {
-    public function getJson() 
+    protected $servers;
+
+    public function __construct()
     {
         $jsonString = file_get_contents(base_path('resources/json/data.json'));
         $servers = json_decode($jsonString);
-        return $servers;
+        $this->servers = $servers;
     }
 
     public function index()
     {
-        $servers = self::getJson();
-        return view('home', ['servers' => $servers]);
+        return view('home', ['servers' => $this->servers]);
     }
 
-    public function serverMainPage($serverMainPageid)
+    public function serverMainPage($serverMainPageId)
     {
-        $servers = self::getJson();
-        foreach($servers as $server){
-            if($server->id == $serverMainPageid){
-                $pageDatas = (array) $server->data;
-                $viewDataPage = $server;
-            }
-        }
-        return view('pages.servermainpage', ['pageDatas' => $pageDatas, 'viewDataPage' => $viewDataPage ]);
+        $server = $this->getSelectedServer($serverMainPageId);
+
+        $pageData = (array)$server->data;
+        $viewDataPage = $server;
+
+        return view('pages.servermainpage', ['pageData' => $pageData, 'viewDataPage' => $viewDataPage]);
     }
 
-    public function serverDataPage($serverDataPageid, $serverMainPageid)
+    public function serverDataPage($serverDataPageId, $serverMainPageId)
     {
-        $servers = self::getJson();
-        foreach($servers as $server){
-            if($server->id == $serverDataPageid){
-                $pageDatas = (array) $server->data;
-                $serverId = $server->id;  
-                
-                //must find a better way 
-                $placeholder = (array) $server->data;
-                $serverData = $placeholder[$serverMainPageid];
-            }
+        $server = $this->getSelectedServer($serverDataPageId);
+
+        $pageData = (array)$server->data;
+        $serverId = $server->id;
+
+        $serverData = $server->data->{$serverMainPageId};
+        return view('pages.serverdatapage', [
+            'pageData' => $pageData,
+            'serverId' => $serverId,
+            'serverData' => $serverData
+        ]);
+    }
+
+    private function getSelectedServer($serverPageId)
+    {
+        $filteredServers = array_filter($this->servers, function ($server) use ($serverPageId) {
+            return $server->id == $serverPageId;
+        });
+        if (!$filteredServers) {
+            throw new NotFoundHttpException();
         }
-        return view('pages.serverdatapage',  ['pageDatas' => $pageDatas, 'serverId' => $serverId, 'serverData' => $serverData]);
+        return reset($filteredServers);
     }
 }
