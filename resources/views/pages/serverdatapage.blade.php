@@ -25,10 +25,18 @@
             <ol>
                 @foreach ($serverData->lines as $item)
                 <li>
-                    {{$item->txt}} -> <span class="badge"><a class="nav-link" target="_blank" href="http://{{$item->url}}">Server Home</a></span>
+                {{$item->txt}} -> <span class="badge"><a class="nav-link" target="_blank" data-toggle="tooltip" title="{{$item->tooptip}}" href="http://{{$item->url}}">Server Home</a></span>
                 </li>
                 @endforeach
             </ol>
         </div>
     </div>
 @endsection
+
+
+<script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+    });
+</script>
+    
