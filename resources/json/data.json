@@ -8,10 +8,12 @@
             "lines": {
                 "line1txt": {
                     "txt": "DK Internet og CKI servere",
+                    "tooptip": "show some cool graf",
                     "url": "nds-monitor-main-view-x001-graf-1.asp"
                 },
                 "line2txt": {
                     "txt": "All Incoming Transactions and Out 1",
+                    "tooptip": "show some cool graf2",
                     "url": "nds-monitor-main-view-x001-graf-2.asp"
                 }
             }
@@ -22,10 +24,12 @@
             "lines": {
                 "line1txt": {
                     "txt": "DK Internet og CKI servere",
+                    "tooptip": "show some cool graf",
                     "url": "nds-monitor-main-view-x001-graf-1.asp"
                 },
                 "line2txt": {
                     "txt": "All Incoming Transactions and Out 1",
+                    "tooptip": "show some cool graf",
                     "url": "nds-monitor-main-view-x001-graf-2.asp"
                 }
             }
@@ -36,10 +40,12 @@
             "lines": {
                 "line1txt": {
                     "txt": "DK Internet og CKI servere",
+                    "tooptip": "show some cool graf",
                     "url": "nds-monitor-main-view-x001-graf-1.asp"
                 },
                 "line2txt": {
                     "txt": "All Incoming Transactions and Out 1",
+                    "tooptip": "show some cool graf",
                     "url": "nds-monitor-main-view-x001-graf-2.asp"
                 }
             }
@@ -55,10 +61,12 @@
             "lines": {
                 "line1txt": {
                     "txt": "DK Internet og CKI servere",
+                    "tooptip": "show some cool graf",
                     "url": "nds-monitor-main-view-x001-graf-1.asp"
                 },
                 "line2txt": {
                     "txt": "All Incoming Transactions and Out 1",
+                    "tooptip": "show some cool graf",
                     "url": "nds-monitor-main-view-x001-graf-2.asp"
                 }
             }
@@ -69,10 +77,12 @@
             "lines": {
                 "line1txt": {
                     "txt": "DK Internet og CKI servere",
+                    "tooptip": "show some cool graf",
                     "url": "nds-monitor-main-view-x001-graf-1.asp"
                 },
                 "line2txt": {
                     "txt": "All Incoming Transactions and Out 1",
+                    "tooptip": "show some cool graf",
                     "url": "nds-monitor-main-view-x001-graf-2.asp"
                 }
             }
@@ -83,10 +93,12 @@
             "lines": {
                 "line1txt": {
                     "txt": "DK Internet og CKI servere",
+                    "tooptip": "show some cool graf",
                     "url": "nds-monitor-main-view-x001-graf-1.asp"
                 },
                 "line2txt": {
                     "txt": "All Incoming Transactions and Out 1",
+                    "tooptip": "show some cool graf",
                     "url": "nds-monitor-main-view-x001-graf-2.asp"
                 }
             }
